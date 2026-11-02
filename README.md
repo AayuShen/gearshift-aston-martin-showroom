@@ -1,33 +1,75 @@
 # Gearshift
 
-A native Android app (Java) for browsing and enquiring about Aston Martins.
+**An Aston Martin showroom and car marketplace demo app for Android.**
 
-## Run it
+Gearshift lets you discover, compare and shortlist Aston Martin cars in a cinematic, editorial interface with light and dark themes. It is written in Java with the Android SDK.
 
-1. In Android Studio choose **File > Open** and select this folder (`E:\Projects\GearShift - APP`).
-2. Let Gradle sync, pick the `Pixel_10` emulator (or a phone) and press **Run**.
+<p align="center">
+  <img src="docs/media/demo.gif" alt="Gearshift homepage and scrolling preview" width="300">
+</p>
 
-From a terminal: `gradlew assembleDebug` builds `app/build/outputs/apk/debug/app-debug.apk`.
+> **Project status: front-end demo.** The app runs on a built-in sample catalogue of Aston Martin listings.
+> There is no backend, so there are no real purchases, payments, accounts or live inventory.
+> Test-drive, message and call buttons show a confirmation only.
 
-## Screens
+## Features
 
-- **Showroom (cinematic homepage)**: 01 full-screen automatic photo slideshow (swipe to change) with "BEYOND THE ORDINARY."; 02 DB12 reveal with giant type layered behind the car; 03 performance HUD with animated gauges; 04 editorial collection with scroll-triggered parallax; 05 exclusive releases, new arrivals and sign-off.
-- **Explore**: search, category rail, refinement chips, sorting, listing cards.
-- **Models**: Model Discovery for Vantage, DB12, Vanquish, DBX and Valhalla.
-- **Favourites**: curated shortlist with telemetry comparison, undo on remove, share.
-- **Car Details**: front / left / right / top viewer (tap or swipe), photos, price, colours, specs, torque curve, car history, test drive / message / call buttons.
+- **Showroom:** full-screen photo slideshow, layered model reveals, animated performance gauges and parallax scrolling.
+- **Explore:** search, category filters, refinement chips and sorting across the collection.
+- **Models:** browse the Vantage, DB12, Vanquish, DBX and Valhalla families.
+- **Car details:** front, side and top views, pricing, colours, specs, a torque curve and enquiry options.
+- **Favourites:** save cars, compare them side by side, undo a removal and share your shortlist.
+- **Light and dark themes** that follow the phone's system setting.
 
-## Structure
+## Screenshots
 
-- `app/src/main/java/com/gearshift/app/data`: `Vehicle`, `ModelLine`, `Inventory` (catalogue), `Favourites` (saved in SharedPreferences).
-- `app/src/main/java/com/gearshift/app/ui`: fragments, `UiKit` helpers, `TorqueCurveView`.
-- `app/src/main/res`: layouts, Manrope font, colours and text styles from the design system.
+| Showroom | Model reveal | Performance |
+|:---:|:---:|:---:|
+| <img src="docs/screenshots/showroom.png" width="240" alt="Showroom"> | <img src="docs/screenshots/showroom-db12.png" width="240" alt="DB12 reveal"> | <img src="docs/screenshots/performance.png" width="240" alt="Performance gauges"> |
 
-Studio cutouts of each model in its launch colour (Vantage Ultra Yellow, DB12 Iridescent Emerald, Vanquish Xenon Grey, DBX707 Neutron White, Valhalla Apex Grey; front, left, right, top, backgrounds removed) are bundled in `res/drawable-nodpi` as `car_{model}_{angle}.webp`. Some extra photos load over the internet. Contact buttons show a confirmation sheet; there is no backend yet.
+| Explore | Car details | Specifications |
+|:---:|:---:|:---:|
+| <img src="docs/screenshots/explore.png" width="240" alt="Explore"> | <img src="docs/screenshots/details.png" width="240" alt="Car details"> | <img src="docs/screenshots/details-specs.png" width="240" alt="Specifications"> |
 
-## Light and dark themes
+| Models | Favourites | Dark theme |
+|:---:|:---:|:---:|
+| <img src="docs/screenshots/models.png" width="240" alt="Models"> | <img src="docs/screenshots/favourites.png" width="240" alt="Favourites"> | <img src="docs/screenshots/dark-showroom.png" width="240" alt="Dark theme showroom"> |
 
-The app follows the phone's system theme (`Theme.Material3.DayNight`). All colours are tokens in `res/values/colors.xml` (light: sage `#A5A79B`, cream `#E8D2B5`, burgundy `#590907`) and `res/values-night/colors.xml` (dark: midnight `#030407`, cobalt `#1558C9`, acid lime `#D4FF24`). Use the semantic names (`bg`, `card`, `text_primary`, `accent`, `highlight`, `media_accent` ...); the older names (`racing_green`, `gold`, `ink` ...) are kept as aliases.
+<details>
+<summary>More dark theme screenshots</summary>
 
-The logo (`drawable/ic_logo.xml`, and `ic_logo_media.xml` for use over photos) is a G-shaped gear ring with a gear-lever crossbar and shift knob. The geometry is identical in both themes; only the colours change.
+| Performance | Explore | Models |
+|:---:|:---:|:---:|
+| <img src="docs/screenshots/dark-performance.png" width="240" alt="Dark performance"> | <img src="docs/screenshots/dark-explore.png" width="240" alt="Dark explore"> | <img src="docs/screenshots/dark-models.png" width="240" alt="Dark models"> |
 
+</details>
+
+## Demo
+
+- **Video walkthrough (55 s):** [docs/media/demo.mp4](docs/media/demo.mp4)
+- **Try it on your phone:** download `gearshift.apk` from the [latest release](../../releases/latest) and install it on Android 8.0 or newer. You may need to allow installs from unknown sources.
+
+## Getting started
+
+Requirements: a recent Android Studio, JDK 17 and Android SDK 37.
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AayuShen/gearshift-aston-martin-showroom.git
+   ```
+2. Open the folder in Android Studio and let Gradle sync.
+3. Pick an emulator or a connected phone and press **Run**.
+
+To build from the command line instead, run `./gradlew assembleDebug` (or `gradlew assembleDebug` on Windows). The APK is written to `app/build/outputs/apk/debug/app-debug.apk`.
+
+Some photos load over the internet, so the device needs a connection.
+
+## Built with
+
+Java, Android SDK, Material Components and Glide.
+
+## License
+
+The code is released under the [MIT License](LICENSE).
+
+Aston Martin and its model names are trademarks of their owner. Gearshift is an unofficial demo project and is not affiliated with or endorsed by Aston Martin.
