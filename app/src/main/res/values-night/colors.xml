@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        DARK theme ("cinematic performance"): midnight black #030407 as the stage,
+        electric cobalt #1558C9 for interactive elements and acid lime #D4FF24,
+        used sparingly, for performance figures, active indicators and key calls to action.
+        Token names match values/colors.xml.
+    -->
+
+    <!-- Surfaces -->
+    <color name="bg">#030407</color>
+    <color name="bg_subtle">#080B12</color>
+    <color name="bg_container">#0E121C</color>
+    <color name="bg_high">#151B29</color>
+    <color name="bg_highest">#1C2335</color>
+    <color name="card">#0B0F18</color>
+    <color name="line">#1A2131</color>
+
+    <!-- Text -->
+    <color name="text_primary">#F1F3F8</color>
+    <color name="text_secondary">#A9B0C0</color>
+    <color name="text_muted">#7A8296</color>
+
+    <!-- Secondary UI -->
+    <color name="sage">#2E3648</color>
+
+    <!-- Interactive accent -->
+    <color name="accent">#1558C9</color>
+    <color name="accent_deep">#0D3E95</color>
+    <color name="accent_text">#6E9EFF</color>
+    <color name="accent_soft">#0E2453</color>
+    <color name="on_accent_soft">#C4D6FF</color>
+    <color name="accent_container">#102E6B</color>
+    <color name="on_accent_container">#C4D6FF</color>
+    <color name="accent_soft_dim">#2A4D96</color>
+
+    <!-- Acid lime highlight -->
+    <color name="highlight">#D4FF24</color>
+    <color name="highlight_soft">#ECFF9A</color>
+    <color name="on_highlight">#030407</color>
+
+    <!-- On top of photography -->
+    <color name="media_accent">#D4FF24</color>
+
+    <!-- Logo -->
+    <color name="logo_mark">#2F6FE0</color>
+    <color name="logo_accent">#D4FF24</color>
+    <color name="logo_media_mark">#2F6FE0</color>
+    <color name="logo_media_accent">#D4FF24</color>
+
+    <!-- Atmosphere -->
+    <color name="glow_accent">#551558C9</color>
+    <color name="glow_accent_mid">#1A1558C9</color>
+    <color name="glow_highlight">#1FD4FF24</color>
+    <color name="glow_end">#00030407</color>
+    <color name="hud_grid">#1A1558C9</color>
+    <color name="hud_track">#22FFFFFF</color>
+    <color name="glass">#CC0B0F18</color>
+    <color name="glass_strong">#E60B0F18</color>
+    <color name="glass_dark">#CC000000</color>
+    <color name="inverse_surface">#E6E9F0</color>
+    <color name="inverse_on_surface">#080B12</color>
+
+    <color name="pill_strong">#1558C9</color>
+    <bool name="light_bars">false</bool>
+</resources>

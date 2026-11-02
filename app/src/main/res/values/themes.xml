@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Gearshift" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/racing_green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/sage</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="android:colorBackground">@color/surface</item>
+        <item name="android:windowBackground">@color/surface</item>
+        <item name="android:statusBarColor">@color/surface</item>
+        <item name="android:navigationBarColor">@color/card</item>
+        <item name="android:windowLightStatusBar">@bool/light_bars</item>
+        <item name="android:windowLightNavigationBar">@bool/light_bars</item>
+        <item name="android:fontFamily">@font/manrope</item>
+        <item name="fontFamily">@font/manrope</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <!-- Typography scale -->
+    <style name="Text" parent="">
+        <item name="android:fontFamily">@font/manrope_regular</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="Text.Kicker">
+        <item name="android:fontFamily">@font/manrope_bold</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:letterSpacing">0.18</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/secondary</item>
+    </style>
+    <style name="Text.Kicker.Green">
+        <item name="android:textColor">@color/racing_green</item>
+    </style>
+    <style name="Text.Kicker.Small">
+        <item name="android:textSize">9sp</item>
+        <item name="android:letterSpacing">0.12</item>
+    </style>
+    <style name="Text.LabelCaps">
+        <item name="android:fontFamily">@font/manrope_semibold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.12</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="Text.LabelUi">
+        <item name="android:fontFamily">@font/manrope_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+    <style name="Text.Hero">
+        <item name="android:fontFamily">@font/manrope_regular</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+    <style name="Text.HeadlineLg">
+        <item name="android:fontFamily">@font/manrope_medium</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+    </style>
+    <style name="Text.HeadlineMd">
+        <item name="android:fontFamily">@font/manrope_medium</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">-0.015</item>
+    </style>
+    <style name="Text.HeadlineSm">
+        <item name="android:fontFamily">@font/manrope_semibold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+    <style name="Text.Metric">
+        <item name="android:fontFamily">@font/manrope_semibold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+    </style>
+    <style name="Text.MetricLarge">
+        <item name="android:fontFamily">@font/manrope_light</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+    </style>
+    <style name="Text.Body">
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+    <style name="Text.BodySm">
+        <item name="android:textSize">13sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textColor">@color/secondary</item>
+    </style>
+
+    <!-- Pill buttons -->
+    <style name="Pill" parent="">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:fontFamily">@font/manrope_semibold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/bg_pill_carbon</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="Pill.Green">
+        <item name="android:background">@drawable/bg_pill_green</item>
+    </style>
+    <style name="Pill.Outline">
+        <item name="android:background">@drawable/bg_pill_outline</item>
+        <item name="android:textColor">@color/carbon</item>
+    </style>
+    <style name="Pill.Soft">
+        <item name="android:background">@drawable/bg_pill_soft</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+    <style name="Pill.Mint">
+        <item name="android:background">@drawable/bg_pill_mint</item>
+        <item name="android:textColor">@color/on_primary_fixed</item>
+    </style>
+    <style name="Pill.Small">
+        <item name="android:layout_height">36dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:drawablePadding">4dp</item>
+    </style>
+    <style name="Pill.Small.Green">
+        <item name="android:background">@drawable/bg_pill_green</item>
+    </style>
+    <style name="Pill.Small.Soft">
+        <item name="android:background">@drawable/bg_pill_soft</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <style name="IconCircle" parent="">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@drawable/bg_circle_soft</item>
+        <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
+        <item name="tint">@color/on_surface</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <style name="IconCircle.Glass">
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@drawable/bg_circle_glass</item>
+    </style>
+
+    <style name="NavLabel" parent="">
+        <item name="android:fontFamily">@font/manrope_semibold</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Card" parent="">
+        <item name="android:background">@drawable/bg_card</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:outlineProvider">background</item>
+        <item name="android:clipToOutline">true</item>
+    </style>
+</resources>

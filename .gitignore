@@ -1,0 +1,49 @@
+# Gradle / build outputs
+.gradle/
+build/
+/app/build/
+/captures
+.externalNativeBuild
+.cxx
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+output-metadata.json
+
+# Local machine config
+local.properties
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Secrets and signing
+.env
+.env.*
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+keystore.properties
+secrets.properties
+google-services.json
+GoogleService-Info.plist
+
+# Logs
+*.log
+
+# Reports and private documents (never committed)
+/Gearshift_Project_Report.docx
+/Gearshift_Project_Report.pdf
+*.docx
+~$*
+/PUBLIC_RELEASE_PLAN.md
+/docs/*.pdf
+/docs/*.docx
+*[Rr]eport*.pdf

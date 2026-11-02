@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Soft accent glow behind the model reveal (burgundy / cobalt). -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient android:type="radial" android:gradientRadius="60%p" android:centerX="0.5" android:centerY="0.55"
+        android:startColor="@color/glow_accent" android:centerColor="@color/glow_accent_mid" android:endColor="@color/glow_end" />
+</shape>

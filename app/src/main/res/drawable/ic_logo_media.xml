@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Gearshift mark: a "G" drawn as an open gear ring whose crossbar is a gear lever,
+    ending in the shift knob. Same geometry everywhere; only the colours change
+    (burgundy + sage in light mode, cobalt + acid lime in dark mode).
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Gear teeth on the ring -->
+    <path
+        android:fillColor="@color/logo_media_mark"
+        android:pathData="M22,2.5h4v4.2h-4z M2.5,22h4.2v4h-4.2z M22,41.3h4v4.2h-4z M10.14,7.34l2.8,2.8 -2.8,2.8 -2.8,-2.8z M10.14,35.06l2.8,2.8 -2.8,2.8 -2.8,-2.8z M37.86,35.06l2.8,2.8 -2.8,2.8 -2.8,-2.8z" />
+    <!-- Ring of the G -->
+    <path
+        android:pathData="M36.02,11.98 A17,17 0 1,0 41,24"
+        android:strokeColor="@color/logo_media_mark"
+        android:strokeWidth="5"
+        android:strokeLineCap="round" />
+    <!-- Crossbar / gear lever -->
+    <path
+        android:pathData="M41,24 L32,24"
+        android:strokeColor="@color/logo_media_mark"
+        android:strokeWidth="5"
+        android:strokeLineCap="round" />
+    <!-- Shift knob -->
+    <path
+        android:fillColor="@color/logo_media_accent"
+        android:pathData="M24,24m-4.6,0a4.6,4.6 0 1,1 9.2,0a4.6,4.6 0 1,1 -9.2,0" />
+</vector>

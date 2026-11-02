@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Gearshift colour tokens. This file is the LIGHT theme ("warm editorial"):
+        muted sage grey #A5A79B, warm cream beige #E8D2B5 and deep burgundy #590907.
+        values-night/colors.xml redefines the same tokens for the DARK theme
+        ("cinematic performance"): midnight black, electric cobalt and acid lime.
+        Layouts and code should use these tokens, never raw hex values.
+    -->
+
+    <!-- Brand swatches -->
+    <color name="brand_sage">#A5A79B</color>
+    <color name="brand_cream">#E8D2B5</color>
+    <color name="brand_burgundy">#590907</color>
+    <color name="brand_midnight">#030407</color>
+    <color name="brand_cobalt">#1558C9</color>
+    <color name="brand_lime">#D4FF24</color>
+
+    <!-- Surfaces -->
+    <color name="bg">#FBF6EE</color>
+    <color name="bg_subtle">#F5EBDD</color>
+    <color name="bg_container">#EFE1CD</color>
+    <color name="bg_high">#E8D2B5</color>
+    <color name="bg_highest">#DFC5A3</color>
+    <color name="card">#FFFFFF</color>
+    <color name="line">#E6D8C4</color>
+
+    <!-- Text -->
+    <color name="text_primary">#1F1A17</color>
+    <color name="text_secondary">#55574C</color>
+    <color name="text_muted">#77796C</color>
+
+    <!-- Secondary UI (outlines, inactive controls) -->
+    <color name="sage">#A5A79B</color>
+
+    <!-- Signature accent: buttons, active states, selections -->
+    <color name="accent">#590907</color>
+    <color name="accent_deep">#3E0605</color>
+    <color name="accent_text">#590907</color>
+    <color name="accent_soft">#F1E0D8</color>
+    <color name="on_accent_soft">#4A0806</color>
+    <color name="accent_container">#6E1A16</color>
+    <color name="on_accent_container">#E8D2B5</color>
+    <color name="accent_soft_dim">#D9B9B0</color>
+
+    <!-- Standout highlight: stats, kickers, key calls to action -->
+    <color name="highlight">#590907</color>
+    <color name="highlight_soft">#9A3A30</color>
+    <color name="on_highlight">#FFFFFF</color>
+
+    <!-- On top of photography (always dark behind) -->
+    <color name="media_accent">#E8D2B5</color>
+    <color name="media_text_soft">#D9FFFFFF</color>
+
+    <!-- Logo -->
+    <color name="logo_mark">#590907</color>
+    <color name="logo_accent">#A5A79B</color>
+    <color name="logo_media_mark">#E8D2B5</color>
+    <color name="logo_media_accent">#FFFFFF</color>
+
+    <!-- Atmosphere -->
+    <color name="glow_accent">#2E590907</color>
+    <color name="glow_accent_mid">#12590907</color>
+    <color name="glow_highlight">#40E8D2B5</color>
+    <color name="glow_end">#00FBF6EE</color>
+    <color name="hud_grid">#14590907</color>
+    <color name="hud_track">#1A1F1A17</color>
+    <color name="glass">#D9FFFFFF</color>
+    <color name="glass_strong">#E6FFFFFF</color>
+    <color name="glass_dark">#CC1F1A17</color>
+    <color name="inverse_surface">#2A2420</color>
+    <color name="inverse_on_surface">#F5EBDD</color>
+
+    <color name="pill_strong">#1F1A17</color>
+    <bool name="light_bars">true</bool>
+
+    <color name="white">#FFFFFF</color>
+    <color name="error">#BA1A1A</color>
+
+    <!-- Legacy names kept so existing screens pick up the new tokens -->
+    <color name="racing_green">@color/accent</color>
+    <color name="racing_green_deep">@color/accent_deep</color>
+    <color name="primary">@color/accent_text</color>
+    <color name="tertiary">@color/accent_deep</color>
+    <color name="tertiary_container">@color/accent_container</color>
+    <color name="on_tertiary_container">@color/on_accent_container</color>
+    <color name="primary_fixed">@color/accent_soft</color>
+    <color name="primary_fixed_dim">@color/accent_soft_dim</color>
+    <color name="on_primary_fixed">@color/on_accent_soft</color>
+    <color name="carbon">@color/text_primary</color>
+    <color name="porcelain">@color/bg</color>
+    <color name="surface">@color/bg</color>
+    <color name="surface_low">@color/bg_subtle</color>
+    <color name="surface_container">@color/bg_container</color>
+    <color name="surface_high">@color/bg_high</color>
+    <color name="surface_highest">@color/bg_highest</color>
+    <color name="on_surface">@color/text_primary</color>
+    <color name="on_surface_variant">@color/text_secondary</color>
+    <color name="secondary">@color/text_secondary</color>
+    <color name="muted">@color/text_muted</color>
+    <color name="hairline">@color/line</color>
+    <color name="metallic">@color/sage</color>
+    <color name="ink">@color/bg</color>
+    <color name="ink_2">@color/bg_subtle</color>
+    <color name="ink_3">@color/bg_container</color>
+    <color name="gold">@color/highlight</color>
+    <color name="gold_light">@color/highlight_soft</color>
+    <color name="gold_deep">@color/accent_deep</color>
+    <color name="emerald">@color/accent_text</color>
+    <color name="emerald_deep">@color/accent_deep</color>
+    <color name="smoke">@color/text_muted</color>
+    <color name="mist">@color/text_secondary</color>
+    <color name="line_dark">@color/line</color>
+</resources>

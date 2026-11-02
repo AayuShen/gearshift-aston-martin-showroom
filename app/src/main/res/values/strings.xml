@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gearshift</string>
+    <string name="nav_showroom">Showroom</string>
+    <string name="nav_explore">Explore</string>
+    <string name="nav_models">Models</string>
+    <string name="nav_favourites">Favourites</string>
+</resources>
